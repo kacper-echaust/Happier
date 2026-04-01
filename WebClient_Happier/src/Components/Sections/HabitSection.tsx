@@ -4,7 +4,8 @@ import { SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import { Carousel } from "../shared/Carousel";
-
+import { FaRegSmileBeam } from "react-icons/fa";
+import { MdOutlineAccessTime } from "react-icons/md";
 const cardText = [
   "Cieszenie się chwilą",
   "Wdzięczność",
@@ -29,14 +30,14 @@ const HabitSection = () => {
     >
       <div className=" flex items-center flex-col h-1/3">
         <h3 className="font-bold text-xl mb-4">Co chcieliśmy sprawdzić?</h3>
-        <div className="flex justify-around flex-wrap text-center w-full min-h-32 items-center gap-8 mb-16 md:mb-0">
-          <p className="max-w-xs leading-relaxed opacity-90">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            aliquid
+        <div className="grid grid-cols-2 grid-rows-2 items-center text-center w-full min-h-32  gap-2 mb-24  place-items-center">
+          <FaRegSmileBeam className="size-8 self-end" />
+          <MdOutlineAccessTime className="size-8 self-end" />
+          <p className="max-w-xs leading-relaxed opacity-90 text-xs md:text-lg">
+            W jaki sposób mikro-nawyki wpływają na samopoczucie?
           </p>
-          <p className="max-w-xs leading-relaxed opacity-90">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            aliquid
+          <p className="max-w-xs leading-relaxed opacity-90 text-xs md:text-lg">
+            Czy 10 minut dziennie wystarczyło, żeby dać efekt?
           </p>
         </div>
       </div>

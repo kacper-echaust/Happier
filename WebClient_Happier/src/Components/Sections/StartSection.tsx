@@ -20,17 +20,19 @@ const StartSection = () => {
   }, []);
 
   return (
-    <section className="flex flex-wrap  justify-center  pb-24 relative gap-24">
+    <section className="relative grid grid-cols-1 md:grid-cols-2 min-h-screen ">
       <div
         className="opacity-30 bg-cover bg-no-repeat absolute inset-0"
         style={{
           backgroundImage: "url('/backgrounds/straight-lines.svg')",
         }}
       ></div>
-      <div className="flex flex-col ml-6 h-[30vh] lg:h-[50vh] justify-between  mt-10 z-20 tracking-wide w-full lg:max-w-[400px] px-6 py-12 gap-6">
+      <div className="flex flex-col  z-20 w-full max-w-[500px] px-6 py-12 md:py-24 gap-8">
         <div>
-          <p className="font-bold text-3xl md:text-6xl">Masz wpływ</p>
-          <p className="font-bold text-3xl md:text-6xl relative ">
+          <p className="font-bold text-3xl md:text-5xl lg:text-6xl ">
+            Masz wpływ
+          </p>
+          <p className="font-bold text-3xl md:text-5xl lg:text-6xl relative ">
             na twoje {""}
             {colorWords.map((word, index) => (
               <span
@@ -70,11 +72,11 @@ const StartSection = () => {
           </ButtonLink>
         </div>
       </div>
-      <div className="w-[500px] flex items-center justify-center overflow-hidden mt-10 md:mt-0">
+      <div className="flex items-end justify-center md:justify-end px-6 md:px-10 absolute -bottom-10 right-0 z-30 md:static">
         <img
           src={woman}
           alt="woman who sit on the floor"
-          className="object-cover w-full object-center"
+          className="w-[300px] sm:w-[350px] md:w-[380px] lg:w-[450px] object-contain"
         />
       </div>
     </section>
