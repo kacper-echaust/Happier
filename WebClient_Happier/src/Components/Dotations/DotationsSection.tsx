@@ -12,7 +12,7 @@ const DotationsSection = () => {
 
   return (
     <section
-      className="bg-white flex flex-col items-center justify-center py-12 px-6"
+      className="bg-white flex flex-col items-center justify-center py-12 px-6 relative"
       style={{
         backgroundImage: "url('./backgrounds/dots.png')",
       }}
@@ -42,6 +42,11 @@ const DotationsSection = () => {
           </form>
         </FormProvider>
       </div>
+      <img
+        src="../../../public/backgrounds/white-bg.png"
+        alt="background"
+        className="h-12 absolute -bottom-10 w-full object-cover object-bottom"
+      />
     </section>
   );
 };

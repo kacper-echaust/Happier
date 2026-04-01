@@ -4,7 +4,7 @@ import { Form } from "./Form";
 const NewsletterSection = () => {
   return (
     <section
-      className="bg-brandYellow flex justify-center py-24 px-4 "
+      className="bg-brandYellow flex justify-center py-24 px-4 relative z-20"
       style={{
         backgroundImage: "url('/backgrounds/dots.png')",
       }}
@@ -23,6 +23,11 @@ const NewsletterSection = () => {
         </div>
         <Form />
       </div>
+      <img
+        src="../../../public/backgrounds/yellow-bg.png"
+        alt="background"
+        className="h-12 absolute -bottom-10 w-full object-cover object-bottom"
+      />
     </section>
   );
 };

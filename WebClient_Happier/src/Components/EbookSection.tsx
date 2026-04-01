@@ -4,7 +4,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 const EbookSection = () => {
   return (
     <section
-      className="bg-brandPurple flex flex-col items-center justify-center h-[60vh]"
+      className="bg-brandPurple flex flex-col items-center justify-center h-[60vh] relative z-10"
       style={{
         backgroundImage: "url('/backgrounds/dots.png')",
       }}
@@ -37,6 +37,11 @@ const EbookSection = () => {
           </ButtonLink>
         </div>
       </div>
+      <img
+        src="../../public/backgrounds/purple-bg.png"
+        alt="background"
+        className="h-12 absolute -bottom-10 w-full object-cover object-bottom"
+      />
     </section>
   );
 };

@@ -4,11 +4,16 @@ const gridStyles =
 const TestResultsSection = () => {
   return (
     <section
-      className=" bg-brandYellow bg-cover bg-center flex flex-col items-center justify-center min-h-[80vh] flex-wrap px-4"
+      className=" bg-brandYellow bg-cover bg-center flex flex-col items-center justify-center min-h-[80vh] flex-wrap px-4 relative"
       style={{
         backgroundImage: "url('/backgrounds/dots.png')",
       }}
     >
+      <img
+        src="../../public/backgrounds/yellow-bg.png"
+        alt="background"
+        className="h-12 absolute -top-10 w-full object-cover object-top"
+      />
       <div className="flex flex-col flex-wrap  text-center  mt-6 mb-12 mx-2">
         <h3 className="text-3xl font-bold max-w-[700px]">
           Wyjaśnijmy, jak zbudować trwały dobrostan w oparciu o najnowsze

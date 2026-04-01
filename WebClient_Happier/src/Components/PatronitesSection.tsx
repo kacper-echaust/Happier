@@ -10,7 +10,7 @@ const headingStyles = "font-bold text-xl";
 const PatronitesSections = () => {
   return (
     <section
-      className="bg-brandBlue text-white flex justify-around  flex-wrap px-16 py-2"
+      className="bg-brandBlue text-white flex justify-around  flex-wrap px-16 py-2 relative z-10"
       style={{
         backgroundImage: "url('/backgrounds/dots.png')",
       }}
@@ -53,6 +53,11 @@ const PatronitesSections = () => {
           swojej pracy!
         </p>
       </div>
+      <img
+        src="../../public/backgrounds/blue-bg.png"
+        alt="background"
+        className="h-12 absolute -bottom-10 w-full object-cover object-bottom"
+      />
     </section>
   );
 };
