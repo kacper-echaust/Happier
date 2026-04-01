@@ -43,7 +43,7 @@ const DotationsSection = () => {
         </FormProvider>
       </div>
       <img
-        src="../../../public/backgrounds/white-bg.png"
+        src="/backgrounds/white-bg.png"
         alt="background"
         className="h-12 absolute -bottom-10 w-full object-cover object-bottom"
       />
