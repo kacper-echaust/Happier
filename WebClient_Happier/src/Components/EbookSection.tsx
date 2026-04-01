@@ -28,7 +28,7 @@ const EbookSection = () => {
           </p>
           <ButtonLink
             color="yellow"
-            href="#"
+            href="https://www.worldhappiness.report/ed/2022/exploring-the-biological-basis-for-happiness/"
             variant="solid"
             className="border border-black w-32 text-base  md:w-48 text-center font-thin flex justify-around items-center"
           >
