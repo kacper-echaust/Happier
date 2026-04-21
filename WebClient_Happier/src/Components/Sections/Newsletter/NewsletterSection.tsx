@@ -24,7 +24,7 @@ const NewsletterSection = () => {
         <Form />
       </div>
       <img
-        src="../../../public/backgrounds/yellow-bg.png"
+        src="/backgrounds/yellow-bg.png"
         alt="background"
         className="h-12 absolute -bottom-10 w-full object-cover object-bottom"
       />

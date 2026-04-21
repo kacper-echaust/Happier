@@ -38,7 +38,7 @@ const EbookSection = () => {
         </div>
       </div>
       <img
-        src="../../public/backgrounds/purple-bg.png"
+        src="/backgrounds/purple-bg.png"
         alt="background"
         className="h-12 absolute -bottom-10 w-full object-cover object-bottom"
       />
